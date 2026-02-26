@@ -8,8 +8,8 @@ Original file is located at
 
 Linear Regresion
 """
-x=[[4.0],[5.0],[6.0],[7.0],[8.0],[9.0],[10.0],[15.0]]
-y=[  8, 10 , 12, 14,16,18, 20, 30]
+x=[[4.0],[5.0],[6.0],[7.0],[8.0],[9.0],[10.0],[15.0],[20]]
+y=[  8, 10 , 12, 14,16,18, 20, 30,40]
 
 # --- Simple Linear Regression ---
 # Step 2 - Fitting Linear Regression: Initializes and fits a standard Linear Regression model
@@ -116,4 +116,5 @@ model.compile(loss= "mean_squared_error" , optimizer="adam", metrics=["mean_squa
 model.fit(x,y,epochs=200)
 x=np.array([[12.0]]) # Convert x to a NumPy array for prediction
 print(model.predict(x))
+
 
